@@ -1,0 +1,420 @@
+.navbar {
+    font-size: large;
+    font-weight: bold;
+    border-radius: 0.2em;
+    box-shadow: 0 0 0.2em #000;
+}
+// cambiar color con animacion en los link del nav
+.navbar-brand:hover {
+    animation-name: animacion1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacion1 {
+    0%   {color:#fff;}
+    100% {color:blue;}
+}
+
+.nav-link {
+    margin: 0.3em;
+}
+// cambiar color con animacion en los link del nav
+.nav-link:hover {
+    animation-name: animacion2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes animacion2 {
+    0%   {color:#fff;}
+    100% {color:red;}
+}
+
+header {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60%;
+    margin-top: 4.6em;
+}
+
+.carrusel {
+background: #fafafa;
+// box-shadow: 0 0 0.6em #999;
+padding-top: 1em;
+padding-bottom: 6.5em;
+}
+.carrusel img{
+    max-height: 30em;
+    object-fit: cover;
+}
+
+//boton añadir carrito
+.card-footer {
+    button:hover {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0.1em solid #000 !important;
+    }
+    button:active {
+        background: #222 !important;
+        color: #fff !important;
+        border: 0.1em solid #000 !important;
+    }
+}
+
+.carta {
+    margin-top: 3em;
+    width: 22em;
+}
+
+.card {
+    border: none ;
+    box-shadow: 0 0.5em 0.5em #111;
+    border-radius: 1em;
+}
+.card img{
+    border-radius: 1em;
+}
+
+.card:hover {
+    border: 2px solid #fff ;
+    box-shadow: 0 0.5em 1em 0.5em #111;
+}
+
+.curva{
+    rotate: calc(180deg);
+    background-color: #fff0;
+    top: 6em;
+}
+
+#grocery {
+    background: #fff;
+}
+#beauty {
+    background: #F5EFE6;
+    
+}
+#clothes{
+    background: #fff;
+}
+
+.social:hover {
+    color: #999!important;
+}
+.social:active {
+    color: #555!important;
+}
+
+.preguntas {
+    padding: 0.2em 0.45em;
+    background: #000;
+    color: #fff;
+}
+
+.preguntas:hover {
+    background: #fff;
+    color: #000;
+}
+
+.preguntas:active {
+    background: #000;
+    color: #fff;
+}
+
+.modal-header {
+    background: #eee;
+    border-radius: 2em 2em 0 0;
+}
+
+.modal-content {
+    border: 0.2em solid #000;
+    border-radius: 2em;
+}
+
+footer .metodoPago{
+    font-size: small;
+}
+
+// CHECKOUT
+// fondo pantalla difuminado
+#fondo {
+    background: linear-gradient(#efefef, #fff);
+}
+
+// formulario
+.formulario{
+    background: #fff;
+    border-radius: 1em;
+    .submit{
+        border: 0.2em solid #2676EE;
+        border-radius: 0.6em;
+    }
+    .submit:hover{
+        background: #1262E0;
+        border: 0.2em solid #1464E1;
+    }
+    .submit:active{
+        background: #243A73;
+    }
+}
+
+// OCULTAR RADIO PARA QUE SOLO SE VEA EL BOTON
+input[type="radio"] {
+    display: none;
+}
+// DAR DISEÑO LABEL BOTON (RADIO)  
+.radio-btn label {
+    width: 10em;
+    border: 0.2em solid #eee;
+    border-radius: 0.5em;
+    color: #999;
+    text-align: center;
+}
+// DAR DISEÑO LABEL BOTON (RADIO) CUANDO AL HACER CLICK
+.radio-btn input[type="radio"]:checked+label {
+    background: #cce9fc;
+    color: #41a3e4;
+    border: 0.2em solid #41a3e4;
+}
+
+// visa 1
+.radio-visa input[id="visa1"] + label {
+    width: 16.8em;
+    height: 10.8em;
+    background-image: url(../images/visa1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+// visa 2
+.radio-visa input[id="visa2"] + label {
+    width: 17em;
+    height: 10.8em;
+    background-image: url(../images/visa2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+// dar diseño visa con click
+.radio-visa input[type="radio"]:checked + label {
+    border: 0.2em solid #41e462;
+    border-radius: 0.8em;
+    opacity: 10;
+}
+
+//añadir visa
+.añadir{
+    vertical-align: middle;
+    padding: 1.9em 0.3em;
+    border-radius: 0 0.8em 0.8em 0;
+    border: none;
+    font-size: xx-large;
+    background: #cce9fc;
+}
+.añadir:hover{
+    background: #aadcfd;
+}
+.añadir:active{
+    background: #80c8f9;
+}
+
+// caja envio
+.envio{
+    background: #fff;
+    border-radius: 1em;
+}
+// botones direccion de envio
+.envio-btn label {
+    width: 18em;
+    padding: 1em;
+    background: #f9f9f9;
+    border-radius: 0.5em;
+    color: #000;
+    font-weight: bold;
+    p {
+        color: #999;
+        font-weight: lighter;
+    }
+}
+
+.envio-btn input[type="radio"]:checked+label {
+    color: #41a3e4;
+    border: 2px solid #41a3e4;
+    background: none;
+}
+
+// botones metodos de envio
+.mEnvio-btn label {
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0.2;
+    img{
+        width: 5.5em;
+        height: 5.5em;
+        border-radius: 1em;
+        box-shadow: 0.2em 0.2em 0.5em 0.2em #bbb;
+    }
+    p {
+        color: #999;
+        font-weight: lighter;
+    }
+    h5{
+        color: #ff0000;
+    }
+}
+
+.mEnvio-btn input[type="radio"]:checked+label{
+    opacity: 10;
+}
+
+// carrito simulado con sus cartas 
+.sumary{
+    background: #fff;
+    border-radius: 1em;
+}
+.lapiz {
+    width: 2em;
+    height: 2em;
+    font-size: x-large;
+    border: none;
+    border-radius: 0.3em;
+}
+.lapiz:active {
+   background: #243A73;
+}
+
+#carta{
+    border-radius: 0.6em;
+}
+
+#carta:hover{
+    box-shadow: 0 0.5em 1em 0.5em #ddd !important;
+}
+#carta img{
+    max-width: 8em;
+    border-radius: 1em;
+}
+
+//puntos opciones sumary
+.puntos {
+    padding: 0.2em 0.75em;
+    border-radius: 1em;
+    box-shadow: 0 0.1em 0.4em #ddd;
+    color: #999;
+}
+.puntos:hover {
+    color: #555;
+    box-shadow: 0 0.1em 0.4em #999;
+}
+.puntos:active {
+    color: #eee;
+}
+
+// caja premium
+.premium {
+    border-radius: 0.8em;
+    background: linear-gradient(#416ce4, #68f);
+    button{
+        color: #fff;
+        background-color: #68f;
+        border: 0.2em solid #68f;
+        border-radius: 0.6em;
+    }
+    button:hover{
+        background-color: #1363DF;
+        border: 0.2em solid #1464E1;
+    }
+    button:active{
+        background-color: #243A73;
+    }
+    .cerdo{
+        margin-left: 5em;
+    }
+}
+
+@media (max-width: 1200px){
+    #carta{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .premium .cerdo{
+        margin: 0 0 0 13em;
+    }
+}
+
+@media (max-width: 1000px){
+    header .curva{
+        top: 5.5em;
+    }
+}
+  
+@media (max-width: 760px){
+    header .curva{
+        top: 5em;
+    }
+    .radio-visa {
+        display: flex;
+        justify-content: center;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .añadir{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 0.6em;
+        padding: 0 3.9em;
+        border-radius: 0 0 0.8em 0.8em;
+    }
+
+    .premium .cerdo{
+        margin: 0 0 0 9em;
+    }
+}
+
+@media (max-width:575px){
+    header .curva{
+        top: 4.5em;
+    }
+    .premium .cerdo{
+        margin: 0 1em 0 0;
+    }
+}
+
+@media (max-width: 450px){
+    header .curva{
+        top: 4em;
+    }
+    .mEnvio-btn{
+        font-size: 0.6em;
+        h6{
+            box-sizing: content-box;
+            width: 145%;
+            font-size: 1.4em;
+        }
+        h5{
+            font-size: small;
+        }
+    }
+}
+
+@media (max-width: 378px){
+}
+
+@media (max-width: 360px){
+    .visa  {
+        padding: 0.3em;
+    }
+    .radio-visa input[id="visa1"] + label, .radio-visa input[id="visa2"] + label{
+        width: 15em;
+        height: 9.5em;
+    }
+    .añadir{
+        padding: 0 3.4em;
+    }
+    .envio-btn label {
+        width: auto;
+    }
+}
