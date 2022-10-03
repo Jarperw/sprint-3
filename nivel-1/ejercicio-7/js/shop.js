@@ -21,7 +21,9 @@ function buy(id) {
 
 // Exercise 2
 function cleanCart() {
-    cartList = [];
+    cart = [];
+    printCart();
+    // cartList = [];
     // console.log("borrado cartlist", cartList);
 }
 
@@ -56,6 +58,7 @@ function generateCart() {
             cart.push(cartList[i]);
         }
     }
+    printCart();
     applyPromotionsCart();
     // console.log("array cart", cart);
 }
