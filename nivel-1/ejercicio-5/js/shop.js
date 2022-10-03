@@ -76,6 +76,7 @@ function applyPromotionsCart() {
             console.log("subtotal con promocion cupcake", cart[i].subtotalWithDiscount.toFixed(2));
         }
     }
+    console.log("cart",cart);
 }
 
 // Exercise 6
