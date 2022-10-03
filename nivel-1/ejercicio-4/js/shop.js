@@ -15,6 +15,7 @@ function buy(id) {
             cartList.push(products[i]);
         }
     }
+    calculateTotal();
     // console.log("carlist", cartList);
 }
 
